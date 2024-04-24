@@ -6,6 +6,13 @@ a:visited {color: #00688B; background: #FFF; text-decoration: none; }
 a:hover {color: #00688B; background: #FFF; text-decoration: none; }
 p {font-size:115%} 
 -->
+
+
+        .abstract {
+            display: none;
+            margin-left: 20px;
+        }
+
 </style> 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -15,13 +22,30 @@ p {font-size:115%}
 
 <head>
 
-<title>Aurelie Ouss</title> <!-- change to whatever you want as the title for your website -->
-<meta name="description" content=" " /> <!-- enter a description for your website inside the " " -->
-<meta name="keywords" content=" " /> <!-- enter a a string of keywords that relate to your website inside the " " -->
+<title>Aurelie Ouss</title> 
+<meta name="description" content=" " /> 
+<meta name="keywords" content=" " /> 
 <meta http-equiv="Content-Language" content="en-gb" />
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
 
 <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <script>
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            var icon = document.getElementById("icon-" + id);
+            if (abstract.style.display === 'none' || abstract.style.display === '') {
+                abstract.style.display = 'block';
+                icon.classList.remove("expand-icon");
+                icon.classList.add("collapse-icon");
+            } else {
+                abstract.style.display = 'none';
+                icon.classList.remove("collapse-icon");
+                icon.classList.add("expand-icon");
+            }
+        }
+    </script>
+
 
 </head>
 
@@ -36,7 +60,7 @@ p {font-size:115%}
 			<ul>
 				<li><a  href="index.html">Home</a></li><li>|</li>
 				<li><a class="active" href="research.html">Research</a></li><li>|</li>
-				<li><a href="CV_ouss_Dec2023.pdf" target="_blank">CV</a></li><li>|</li>
+				<li><a href="CV_ouss_April2024.pdf" target="_blank">CV</a></li><li>|</li>
 			</ul>
 		</div>
 	</div>
@@ -46,205 +70,245 @@ p {font-size:115%}
 		
 					<h2> PUBLICATIONS </h2>
 					
+																					<p> <a class="paper" >Labor Mobility and the Problem of Modern Policing</a>  &nbsp <a  href="PoliceMobility.pdf"  target=_new>[pdf]</a> <b>    &nbsp NYU Law Review (2024)</b> <p> 
 
-											<p> <b>Labor Mobility and the Problem of Modern Policing</b> &nbsp <a  href="PoliceMobility.pdf"  target=_new>[pdf]</a> <b>    &nbsp NYU Law Review (forthcoming)</b> <p> 
-											
-											
-											<p> with  <a href="https://www.law.uchicago.edu/faculty/masur" target=_new> Jonathan Masur </a> and <a href="https://www.law.uchicago.edu/faculty/rappaport" target=_new> John Rappaport </a>  <p> 
+	<div class="indented-line">				
+					                <p> with <a href="https://www.law.uchicago.edu/faculty/masur" target=_new>Jonathan Masur</a> and <a href="https://www.law.uchicago.edu/faculty/rappaport" target=_new>John Rappaport</a>
+                    <span class="toggle-icon" onclick="toggleAbstract('abstract1')"><span id="icon-abstract1" class="expand-icon"></span>[+ <i>Abstract</i> ] </span>
+                </p>
+</div>
+                <div id="abstract1" class="abstract">
+                    <p align="justify"> We document and discuss the implications of a striking feature of modern American policing: the stasis of police labor forces. Using an original employment dataset assembled through public records requests, we show that, after the first few years on a job, officers rarely change employers, and intermediate officer ranks are filled almost exclusively through promotion rather than lateral hiring. We identify both nonlegal and legal causes of this phenomenon - ranging from geographic monopolies to statutory and collectively bargained rules about pensions, rank, and seniority - and discuss its normative implications. We suggest reforms designed to confer the advantages of labor mobility while ameliorating its costs.</p>
+                </div>
 
-
-			</div>
-			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: We document and discuss the implications of a striking feature of modern American policing: the stasis of police labor forces. Using an original employment dataset assembled through public records requests, we show that, after the first few years on a job, officers rarely change employers, and intermediate officer ranks are filled almost exclusively through promotion rather than lateral hiring. We identify both nonlegal and legal causes of this phenomenon - ranging from geographic monopolies to statutory and collectively bargained rules about pensions, rank, and seniority - and discuss its normative implications. We suggest reforms designed to confer the advantages of labor mobility while ameliorating its costs.</p>
-			
-			</div>
-
-
-											<p> <b>Systemic Failure to Appear in Court</b>   &nbsp  <a  href="SystemicFTA.pdf"  target=_new>[pdf]</a> &nbsp <a  href="SystemicFTA_WP.pdf"  target=_new>[Policy Brief]</a> <b>    &nbsp University of Pennsylvania Law Review (2023)</b> <p> 
-											
-										
-
-											<p> with <a href="https://crim.sas.upenn.edu/people/lindsay-graef" target=_new> Lindsay Graef, <a href="https://www.law.upenn.edu/faculty/sgmayson" target=_new> Sandy Mayson </a> and  <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2420348" target=_new> Megan Stevenson </a> <p> 
+					
 
 
-			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: This Article aims to reorient the conversation around "failure-to-appear" (FTA) in criminal court. Recent policy and scholarship have addressed FTA mostly as a problem of criminal defendants in connection with questions about how bail systems should operate. But ten years of data from Philadelphia reveal a striking fact: it is not defendants who most frequently fail to appear but rather the other parties necessary for a criminal proceeding - witnesses and lawyers. Between 2010 and 2020, an essential witness or private attorney failed to appear for at least one hearing in 53% of all cases, compared to a 19% FTA rate for defendants. Police officers, victims, other witnesses, and private attorneys each failed to appear at rates substantially higher than defendants. This Article aims to draw attention to systemic FTA as an important feature of contemporary U.S. criminal legal systems, identify the core questions that it raises, and lay a path for future research.</p>
-			
-			</div>
-
-
-
-										<p> <b>Does Cash Bail Deter Misconduct?</b>   &nbsp  <a  href="NCB.pdf"  target=_new>[pdf]</a>  <b>    &nbsp American Economic Journal: Applied (2023)</b> <p> 
+											<p> <a class="paper" >Systemic Failure to Appear in Court   &nbsp  <a  href="SystemicFTA.pdf"  target=_new>[pdf]</a> &nbsp <a  href="SystemicFTA_WP.pdf"  target=_new>[Policy Brief]</a> <b>    &nbsp University of Pennsylvania Law Review (2023)</b> <p> 
 											
 										
+	<div class="indented-line">				
 
-											<p> with  <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2420348" target=_new> Megan Stevenson </a> <p> 
+											<p> with <a href="https://crim.sas.upenn.edu/people/lindsay-graef" target=_new> Lindsay Graef, <a href="https://www.law.upenn.edu/faculty/sgmayson" target=_new> Sandy Mayson </a> and  <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2420348" target=_new> Megan Stevenson </a>                     <span class="toggle-icon" onclick="toggleAbstract('abstract2')"><span id="icon-abstract2" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
 
-				
 
+                <div id="abstract2" class="abstract">
+                    <p align="justify"> This Article aims to reorient the conversation around "failure-to-appear" (FTA) in criminal court. Recent policy and scholarship have addressed FTA mostly as a problem of criminal defendants in connection with questions about how bail systems should operate. But ten years of data from Philadelphia reveal a striking fact: it is not defendants who most frequently fail to appear but rather the other parties necessary for a criminal proceeding - witnesses and lawyers. Between 2010 and 2020, an essential witness or private attorney failed to appear for at least one hearing in 53% of all cases, compared to a 19% FTA rate for defendants. Police officers, victims, other witnesses, and private attorneys each failed to appear at rates substantially higher than defendants. This Article aims to draw attention to systemic FTA as an important feature of contemporary U.S. criminal legal systems, identify the core questions that it raises, and lay a path for future research.</p>
+                </div>
+
+											
 
 			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: Courts routinely use low cash bail as a financial incentive to ensure that released defendants appear in court and abstain from crime. This can create burdens for defendants with little empirical evidence on its efficacy. We exploit a prosecutor-driven reform that led to a sharp reduction in low cash bail and pretrial supervision, with no effect on pretrial detention, to test whether such incentive mechanisms succeed at their intended purpose. We find no evidence that financial collateral has a deterrent effect on failure-to-appear or pretrial crime. This paper also contributes to the literature on legal actor discretion, showing that non-binding reforms may have limited impact on jail populations.</p>
-						</div>
+
+
+
+										<p><a class="paper" > Does Cash Bail Deter Misconduct?  &nbsp  <a  href="NCB.pdf"  target=_new>[pdf]</a>  <b>    &nbsp American Economic Journal: Applied (2023)</b> <p> 
+											
+									<div class="indented-line">				
+											<p> with  <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2420348" target=_new> Megan Stevenson </a> 
+											<span class="toggle-icon" onclick="toggleAbstract('abstract3')"><span id="icon-abstract3" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
+
+
+                <div id="abstract3" class="abstract">
+                    <p align="justify"> Courts routinely use low cash bail as a financial incentive to ensure that released defendants appear in court and abstain from crime. This can create burdens for defendants with little empirical evidence on its efficacy. We exploit a prosecutor-driven reform that led to a sharp reduction in low cash bail and pretrial supervision, with no effect on pretrial detention, to test whether such incentive mechanisms succeed at their intended purpose. We find no evidence that financial collateral has a deterrent effect on failure-to-appear or pretrial crime. This paper also contributes to the literature on legal actor discretion, showing that non-binding reforms may have limited impact on jail populations.</p>
+                </div>
+
+											
+
 
 
 
 	<div id="container">	
 	
 	
-												<p> <b>Jobs, News and Re-offending after Incarceration</b> &nbsp <a  href="NewsJobs.pdf"  target=_new>[pdf]</a> <b>    &nbsp The Economic Journal  (2021)</b> <p> 
+												<p> <a class="paper" > Jobs, News and Re-offending after Incarceration &nbsp <a  href="NewsJobs.pdf"  target=_new>[pdf]</a> <b>    &nbsp The Economic Journal  (2021)</b> <p> 
 											
-											
-											<p> with <a href="https://sites.google.com/view/galbiatir1/" target=_new> Roberto Galbiati </a> and <a href="https://sites.google.com/site/arnaudphilippe11/" target=_new> Arnaud Philippe. </a>   <p> 
-			
-			
+																		<div class="indented-line">				
+		
+											<p> with <a href="https://sites.google.com/view/galbiatir1/" target=_new> Roberto Galbiati </a> and <a href="https://sites.google.com/site/arnaudphilippe11/" target=_new> Arnaud Philippe. </a>   											<span class="toggle-icon" onclick="toggleAbstract('abstract4')"><span id="icon-abstract4" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
+
+
+                <div id="abstract4" class="abstract">
+                    <p align="justify"> We study how local labour market conditions and information about job availability affect recidivism after incarceration. We exploit daily variations in the quality of the labour market at the time of release from prison. We combine individual-level administrative data on former inmates in France to county-level daily data on new job vacancies, and on newspaper coverage of job creation and destruction. Our analysis provides two new findings. First, media coverage of job creation reduces recidivism, suggesting that policies promoting access to information about employment opportunities can contribute to reducing recidivism. Second, we show that there is heterogeneity in what kinds of jobs affect recidivism: in France, former inmates do not respond to overall job creation, but better opportunities in manufacturing jobs at release reduce recidivism rates.</p>
+                </div>
+
  
 			
-			</div>
+
+
+										<p>  <a class="paper" > Behavioral nudges reduce failure to appear for court  &nbsp  <a  href="scifta.pdf"  target=_new>[pdf]</a> &nbsp <a  href="scifta_SM.pdf"  target=_new>[Appendix]</a> &nbsp <a  href="Using-Behavioral-Science-to-Improve-Criminal-Justice-Outcomes.pdf"  target=_new>[Policy Brief]</a> <b>    &nbsp Science (2020)</b> <p> 
+
+<div class="indented-line">	<p> with <a href="https://www.ideas42.org/about-us/people/" target=_new> Alissa Fishbane </a> and <a href="http://theslab.uchicago.edu/anuj/" target=_new> Anuj Shah </a>   											<span class="toggle-icon" onclick="toggleAbstract('abstract5')"><span id="icon-abstract5" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
+
+
+                <div id="abstract5" class="abstract">
+                    <p align="justify"> Each year, millions of Americans fail to appear in court for low-level offenses, and warrants are then issued for their arrest. In two field studies in New York City, we make critical information salient by redesigning the summons form and providing text message reminders. These interventions reduce failures to appear by 13 to 21% and lead to 30,000 fewer arrest warrants over a 3-year period. In laboratory experiments, we find that whereas criminal justice professionals see failures to appear as relatively unintentional, laypeople believe they are more intentional. These lay beliefs reduce support for policies that make court information salient and increase support for punishment. Our findings suggest that criminal justice policies can be made more effective and humane by anticipating human error in unintentional offenses.</p>
+                </div>
 			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: We study how local labour market conditions and information about job availability affect recidivism after incarceration. We exploit daily variations in the quality of the labour market at the time of release from prison. We combine individual-level administrative data on former inmates in France to county-level daily data on new job vacancies, and on newspaper coverage of job creation and destruction. Our analysis provides two new findings. First, media coverage of job creation reduces recidivism, suggesting that policies promoting access to information about employment opportunities can contribute to reducing recidivism. Second, we show that there is heterogeneity in what kinds of jobs affect recidivism: in France, former inmates do not respond to overall job creation, but better opportunities in manufacturing jobs at release reduce recidivism rates.</p>
-			
-			
-			</div>
-
-
-
-										<p> <b>Behavioral nudges reduce failure to appear for court</b>   &nbsp  <a  href="scifta.pdf"  target=_new>[pdf]</a> &nbsp <a  href="scifta_SM.pdf"  target=_new>[Appendix]</a> &nbsp <a  href="Using-Behavioral-Science-to-Improve-Criminal-Justice-Outcomes.pdf"  target=_new>[Policy Brief]</a> <b>    &nbsp Science (2020)</b> <p> 
-											
-											<p> with <a href="https://www.ideas42.org/about-us/people/" target=_new> Alissa Fishbane </a> and <a href="http://theslab.uchicago.edu/anuj/" target=_new> Anuj Shah </a> <p> 
-
-
-			</div>
-			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: Each year, millions of Americans fail to appear in court for low-level offenses, and warrants are then issued for their arrest. In two field studies in New York City, we make critical information salient by redesigning the summons form and providing text message reminders. These interventions reduce failures to appear by 13 to 21% and lead to 30,000 fewer arrest warrants over a 3-year period. In laboratory experiments, we find that whereas criminal justice professionals see failures to appear as relatively unintentional, laypeople believe they are more intentional. These lay beliefs reduce support for policies that make court information salient and increase support for punishment. Our findings suggest that criminal justice policies can be made more effective and humane by anticipating human error in unintentional offenses..</p>
-
-
-			</div>
 			
 	<div id="container">	
 
 
 			<div id="container">	
 			
-														<p> <b>Incentive Structures and Criminal Justice</b> &nbsp <a  href="ouss_incentives_justice.pdf"  target=_new>[pdf]</a> <b>    &nbsp Journal of Public Economics (2020)</b> <p> 
+														<p> <a class="paper" > Incentive Structures and Criminal Justice &nbsp <a  href="ouss_incentives_justice.pdf"  target=_new>[pdf]</a> <b>    &nbsp Journal of Public Economics (2020)</b> <p> 
 											
 			</div>
 			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: The incarceration rate has increased substantially in the United States between the 1980s and the 2000s. In this paper, I explore an institutional explanation for this growth: the fact that costs of incarceration are not fully internalized. Typically, prison is paid for at the state level, but county employees (such as judges, prosecutors or probation officers) determine time spent in custody. I exploit a natural experiment that shifted the cost burden of juvenile incarceration from state to counties, keeping overall costs and responsibilities unchanged. This resulted in a stark drop in incarceration, and no increase in arrests, suggesting an over-use of prison when costs are not internalized. The large magnitude of the change suggests that misaligned incentives in criminal justice may be a significant contributor to the current levels of incarceration in the United States.</p>
+			<div class="indented-line">				
+
+											<p> 										<span class="toggle-icon" onclick="toggleAbstract('abstract6')"><span id="icon-abstract6" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
+
+
+                <div id="abstract6" class="abstract">
+                    <p align="justify"> The incarceration rate has increased substantially in the United States between the 1980s and the 2000s. In this paper, I explore an institutional explanation for this growth: the fact that costs of incarceration are not fully internalized. Typically, prison is paid for at the state level, but county employees (such as judges, prosecutors or probation officers) determine time spent in custody. I exploit a natural experiment that shifted the cost burden of juvenile incarceration from state to counties, keeping overall costs and responsibilities unchanged. This resulted in a stark drop in incarceration, and no increase in arrests, suggesting an over-use of prison when costs are not internalized. The large magnitude of the change suggests that misaligned incentives in criminal justice may be a significant contributor to the current levels of incarceration in the United States.</p>
+                </div>
+
+			
 			
 
-			</div>
 			
 <div id="container">	
 
 
-											<p> <b>Is Police Behavior Getting Worse? Data Selection and the Measurement of Policing Harms</b> &nbsp <a  href="PoliceMobility.pdf"  target=_new>[pdf]</a> <b>    &nbsp Journal of Legal Studies (2020)</b> <p> 
+											<p> <a class="paper" > Is Police Behavior Getting Worse?  &nbsp <a  href="PoliceMobility.pdf"  target=_new>[pdf]</a> <b>    &nbsp Journal of Legal Studies (2020)</b> <p> 
 											
-											
-											<p> with <a href="https://www.law.uchicago.edu/faculty/rappaport" target=_new> John Rappaport </a>   <p> 
+														
+			
+			
+			<div class="indented-line">		<p> with <a href="https://www.law.uchicago.edu/faculty/rappaport" target=_new> John Rappaport </a>	<span class="toggle-icon" onclick="toggleAbstract('abstract7')"><span id="icon-abstract7" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
 
-			</div>
+
+                <div id="abstract7" class="abstract">
+                    <p align="justify"> Public concern about harmful policing is surging. Governments are paying historic amounts for law enforcement liability. Has police behavior changed? Or is society responding differently? Traditional data sources struggle with this question. Common metrics conflate the prevalence and severity of policing harms with the responses of legal actors such as lawyers, judges, and juries. We overcome this problem using a new data source: liability insurance claims. Our data set contains 23 years of claims against roughly 350 law enforcement agencies that contract with a single insurer. We find that, while lawsuits and payouts have trended upward over the past decade, insurance claims have declined. We examine multiple potential explanations. We argue that, in our sample, police behavior is not getting worse; rather, societal responses to policing harms are intensifying. Police litigation is not representative of the broader universe of claims, and adjudicated claims differ systematically from settled ones.</p>
+                </div>
 			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: Public concern about harmful policing is surging. Governments are paying historic amounts for law enforcement liability. Has police behavior changed? Or is society responding differently? Traditional data sources struggle with this question. Common metrics conflate the prevalence and severity of policing harms with the responses of legal actors such as lawyers, judges, and juries. We overcome this problem using a new data source: liability insurance claims. Our data set contains 23 years of claims against roughly 350 law enforcement agencies that contract with a single insurer. We find that, while lawsuits and payouts have trended upward over the past decade, insurance claims have declined. We examine multiple potential explanations. We argue that, in our sample, police behavior is not getting worse; rather, societal responses to policing harms are intensifying. Police litigation is not representative of the broader universe of claims, and adjudicated claims differ systematically from settled ones.</p>
-			
-			</div>
-			
-			
+
+		
 
 <div id="container">	
 
 
 
-										<p> <b>No hatred or malice, fear or affection: Media and sentencing</b>   &nbsp  <a  href="MediaSentencing.pdf"  target=_new>[pdf]</a> &nbsp <a  href="MediaSentencingAppendix.pdf"  target=_new>[Appendix]</a>  <b>    &nbsp Journal of Political Economy (2017)</b> <p> 
+										<p> <a class="paper" > No hatred or malice, fear or affection: Media and sentencing   &nbsp  <a  href="MediaSentencing.pdf"  target=_new>[pdf]</a> &nbsp <a  href="MediaSentencingAppendix.pdf"  target=_new>[Appendix]</a>  <b>    &nbsp Journal of Political Economy (2017)</b> <p> 
 											
-											<p> with <a href="https://sites.google.com/site/arnaudphilippe11/" target=_new> Arnaud Philippe </a> <p> 
-			
-			</div>
-			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: We explore how television broadcasting of unrelated criminal justice events affects sentencing. Exploiting as-good-as-random variation in news content before a verdict, we find that sentences are 3 months longer when the verdict is reached after coverage of crime. Sentence increase with media exposure to crime, not crime itself, and the effect tapers off quickly. Our results suggest that professional experience and expertise mitigates the effect of irrelevant external information. This paper highlights the influence of noise in the news cycle: media can temporarily influence decisions by changing what is top-of-the-mind, rather than signaling deeper changes in offending or societal concerns.</p>
-			
+												<div class="indented-line">			<p> with <a href="https://sites.google.com/site/arnaudphilippe11/" target=_new> Arnaud Philippe </a> 	<span class="toggle-icon" onclick="toggleAbstract('abstract8')"><span id="icon-abstract8" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
 
-			</div>
+
+                <div id="abstract8" class="abstract">
+                    <p align="justify"> We explore how television broadcasting of unrelated criminal justice events affects sentencing. Exploiting as-good-as-random variation in news content before a verdict, we find that sentences are 3 months longer when the verdict is reached after coverage of crime. Sentence increase with media exposure to crime, not crime itself, and the effect tapers off quickly. Our results suggest that professional experience and expertise mitigates the effect of irrelevant external information. This paper highlights the influence of noise in the news cycle: media can temporarily influence decisions by changing what is top-of-the-mind, rather than signaling deeper changes in offending or societal concerns. </p>
+                </div>
+			
 			
 	<div id="container">	
 	
 	
-											<p> <b>When Punishment Doesn't Pay: Cold Glow and Decisions to Punish</b>   &nbsp  <a  href="ColdGlow.pdf"  target=_new>[pdf]</a>  <b>    &nbsp Journal of Law and Economics (2015)</b> <p> 
+											<p> <a class="paper" > When Punishment Doesn't Pay: Cold Glow and Decisions to Punish   &nbsp  <a  href="ColdGlow.pdf"  target=_new>[pdf]</a>  <b>    &nbsp Journal of Law and Economics (2015)</b> <p> 
 											
-											<p> with <a href="http://alexpeys.github.io" target=_new> Alex Peysakhovich </a> <p> 
-			</div>
+												<div class="indented-line">			<p> with <a href="http://alexpeys.github.io" target=_new> Alex Peysakhovich </a> 	<span class="toggle-icon" onclick="toggleAbstract('abstract9')"><span id="icon-abstract9" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
+
+
+                <div id="abstract9" class="abstract">
+                    <p align="justify"> Economic theories of punishment focus on determining the levels that provide maximal social material payoffs. In other words, these theories treat punishment as a public good. Several parameters are key to calculating optimal levels of punishment: total social costs, total social benefits, and the probability that offenders are apprehended. However, levels of punishment are often determined by aggregating individual decisions. Research in behavioral economics, psychology, and neuroscience shows that individuals appear to treat punishment as a private good (cold glow). This means that individual choices may not respond appropriately to the social parameters. We present a simple theory and show in a series of experiments that individually chosen punishment levels can be predictably too high or too low relative to those that maximize social material welfare. Our findings highlight the importance of the psychology of punishment for understanding social outcomes and for designing social institutions. </p>
+                </div>
 			
 <div id="container1">				
-			<p align="justify"> <i>Abstract</i>: Economic theories of punishment focus on determining the levels that provide maximal social material payoffs. In other words, these theories treat punishment as a public good. Several parameters are key to calculating optimal levels of punishment: total social costs, total social benefits, and the probability that offenders are apprehended. However, levels of punishment are often determined by aggregating individual decisions. Research in behavioral economics, psychology, and neuroscience shows that individuals appear to treat punishment as a private good (cold glow). This means that individual choices may not respond appropriately to the social parameters. We present a simple theory and show in a series of experiments that individually chosen punishment levels can be predictably too high or too low relative to those that maximize social material welfare. Our findings highlight the importance of the psychology of punishment for understanding social outcomes and for designing social institutions.</p>
+
 			
 			</div>
 			
 					<h2>WORKING PAPERS</h2>
+					
+					
+					
+					<div id="container">	
+				
+				
+																<p> <a class="paper" > Officer-Involved: The Media Language of Police Killings   &nbsp  <a  href="OfficerInvolved.pdf"  target=_new>[pdf]</a>  <b>    &nbsp Conditionally accepted at the Quarterly Journal of Economics. </b> <p> 
+											
+								<div class="indented-line">				<p> with <a href="https://sites.google.com/view/bocarba/" target=_new> Bocar Ba, </a>   <a href="https://sites.duke.edu/patrickbayer/" target=_new> Patrick Bayer </a> and  <a href="https://www.jmorenomedina.com" target=_new> Jonathan Moreno-Medina. </a>  <span class="toggle-icon" onclick="toggleAbstract('abstract10')"><span id="icon-abstract10" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
+
+
+                <div id="abstract10" class="abstract">
+                    <p align="justify"> This paper examines language patterns in US television news coverage of police killings. We first document that the media employ semantic structures that obfuscate responsibility - such as passive voice, nominalizations, and intransitive verbs - more frequently for police killings than for civilian killings. Using field variation and an online experiment, we demonstrate that these language differences matter. In the field, we find that people who happened to have taken a survey just after more obfuscatory coverage of a police killing are more likely to support police funding. In our online experiment, participants are less likely to hold police officers morally responsible and demand penalties when exposed to obfuscatory language, especially when the victim is unarmed. Returning to the news data, we find higher use of obfuscatory language when victims are unarmed, when video footage is available, or when the suspect is not fleeing - in other words, situations when obfuscation matters most. Turning to the causes of this differential obfuscation, our evidence is not consistent with either demand-side drivers or supply-side factors associated with TV station ownership and political leaning. Instead, our results point to original narratives crafted by police departments as a more likely driver of obfuscation. Our study emphasizes the importance of considering semantic language structures in understanding how media shapes perceptions, extending beyond coverage quantity and slant. </p>
+                </div>
+
+
+
+			</div>
+			
+
+	
 
 	<div id="container">	
 	
 	
-												<p> <b>Conviction, Incarceration, and Recidivism: Understanding the Revolving Door</b>   &nbsp  <a  href="RevolvingDoor.pdf"  target=_new>[pdf]</a>  <b>    &nbsp Revise and Resubmit at the Quarterly Journal of Economics. </b> <p> 
+												<p> <a class="paper" > Conviction, Incarceration, and Recidivism: Understanding the Revolving Door  &nbsp  <a  href="RevolvingDoor.pdf"  target=_new>[pdf]</a>  <b>    &nbsp Revise and Resubmit at the Quarterly Journal of Economics. </b> <p> 
 											
-											<p> with <a href="http://johnerichumphries.com" target=_new> John Eric Humphries, </a>   <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2420348" target=_new> Megan Stevenson, </a> <a href="https://www.kameliastavreva.com/home" target=_new> Kamelia Stavreva </a> and  <a href="https://sites.google.com/site/winnielillianvandijk/home" target=_new> Winnie van Dijk. </a>  <p> 
+								<div class="indented-line">				<p> with <a href="http://johnerichumphries.com" target=_new> John Eric Humphries, </a>   <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2420348" target=_new> Megan Stevenson, </a> <a href="https://www.kameliastavreva.com/home" target=_new> Kamelia Stavreva </a> and  <a href="https://sites.google.com/site/winnielillianvandijk/home" target=_new> Winnie van Dijk. </a>  <span class="toggle-icon" onclick="toggleAbstract('abstract11')"><span id="icon-abstract11" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
 
 
-			</div>
-			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: Noncarceral conviction is a common court outcome: for every individual incarcerated, there are approximately three who were recently convicted but were not sentenced to prison.  To study the consequences of noncarceral conviction vs dismissal for recidivism, we extend the typical binary-treatment judge IV framework to a setting with multiple treatments. We outline assumptions under which commonly-used 2SLS regressions recover causal and margin-specific treatment effects, offer empirical tests for these assumptions, and relate them to models of judge decision-making. We apply these 2SLS regressions to felony cases in Virginia. Under our identifying assumptions, the estimates imply that noncarceral felony conviction leads to a large and long-lasting increase in recidivism relative to dismissal, consistent with a criminogenic effect of a felony conviction record. We derive an expression for the asymptotic bias if the identifying assumptions on judge decision-making are not met and combine this with independent evidence to argue that their failure to be met is unlikely to have a qualitative impact on our results. Lastly, we introduce an alternative empirical strategy that recovers treatment effects for all margins; this approach yields similar estimates. Collectively, our results suggest that noncarceral felony conviction is an important and potentially overlooked driver of recidivism, while incarceration mainly has shorter-term incapacitation effects.</p>
-			
-			</div>
+                <div id="abstract11" class="abstract">
+                    <p align="justify"> Noncarceral conviction is a common court outcome: for every individual incarcerated, there are approximately three who were recently convicted but were not sentenced to prison.  To study the consequences of noncarceral conviction vs dismissal for recidivism, we extend the typical binary-treatment judge IV framework to a setting with multiple treatments. We outline assumptions under which commonly-used 2SLS regressions recover causal and margin-specific treatment effects, offer empirical tests for these assumptions, and relate them to models of judge decision-making. We apply these 2SLS regressions to felony cases in Virginia. Under our identifying assumptions, the estimates imply that noncarceral felony conviction leads to a large and long-lasting increase in recidivism relative to dismissal, consistent with a criminogenic effect of a felony conviction record. We derive an expression for the asymptotic bias if the identifying assumptions on judge decision-making are not met and combine this with independent evidence to argue that their failure to be met is unlikely to have a qualitative impact on our results. Lastly, we introduce an alternative empirical strategy that recovers treatment effects for all margins; this approach yields similar estimates. Collectively, our results suggest that noncarceral felony conviction is an important and potentially overlooked driver of recidivism, while incarceration mainly has shorter-term incapacitation effects. </p>
+                </div>
 			
 			
-			
-				<div id="container">	
 				
-				
-																<p> <b>Officer-Involved: The Media Language of Police Killings</b>   &nbsp  <a  href="OfficerInvolved.pdf"  target=_new>[pdf]</a>  <b>    &nbsp Reject and Resubmit at the Quarterly Journal of Economics. </b> <p> 
-											
-											<p> with <a href="https://sites.google.com/view/bocarba/" target=_new> Bocar Ba, </a>   <a href="https://sites.duke.edu/patrickbayer/" target=_new> Patrick Bayer </a> and  <a href="https://www.jmorenomedina.com" target=_new> Jonathan Moreno-Medina. </a>  <p> 
-
-
-			</div>
-			
-<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: This paper studies the language used in television news broadcasts to describe police killings in the United States from 2013-19. We begin by documenting that the media is significantly more likely to use several language structures - e.g., passive voice, nominalization, intransitive verbs - that obfuscate responsibility for police killings compared to civilian homicides. We next use an online experiment to test whether these language differences matter. Participants are less likely to hold a police officer morally responsible for a killing and to demand penalties after reading a story that uses obfuscatory language. In the experiment, the language used in the story matters more when the decedent is not reported to be armed, prompting a final research question: is media obfuscation more common in high leverage circumstances, when the public might be more inclined to judge the police harshly? Returning to the news data, we find that news broadcasts are indeed especially likely to use obfuscatory language structures when the decedent was unarmed or when body camera video is available. Through this important case study, our paper highlights the importance of incorporating the semantic structure of language, in addition to the amount and slant of coverage, in analyses of how the media shapes perceptions.</p>
-			
-			</div>
-	
 				
 			
 	<div id="container">	
 
-<p> <b>Prison as a School of Crime: Evidence from Cell-Level Interaction</b>  <p> 
+<p> <a class="paper" > Prison as a School of Crime: Evidence from Cell-Level Interaction  <p> </a> 
 
 			</div>
 			
-			<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: This paper investigates how interactions in prison influence post-release behavior, establishing at a fine granularity level how prison might act as a "school of crime". Using French administrative data on all prisoners incarcerated since January, 2008, which includes cell allocation, we study interactions in own and cellmates' post-release behavior, and in particular in type of crime committed upon release, depending on self and cellmates' motive of incarceration. In French short-term prisons (which we focus on), cellmates typically spend a large portion of a day in their cells, and normal cell sizes are quite small (generally less than 6 inmates at a time), allowing us define extensively who one interacts with during the length of incarceration. By using number of days of overlap as a measure of intensity of interaction, we find evidence of peer effects for skill-intensive offenses, in case of recidivism.</p>
-			</div>
 			
+													<div class="indented-line">					<p> 										<span class="toggle-icon" onclick="toggleAbstract('abstract12')"><span id="icon-abstract12" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
+
+
+                <div id="abstract12" class="abstract">
+                    <p align="justify"> This paper investigates how interactions in prison influence post-release behavior, establishing at a fine granularity level how prison might act as a "school of crime". Using French administrative data on all prisoners incarcerated since January, 2008, which includes cell allocation, we study interactions in own and cellmates' post-release behavior, and in particular in type of crime committed upon release, depending on self and cellmates' motive of incarceration. In French short-term prisons (which we focus on), cellmates typically spend a large portion of a day in their cells, and normal cell sizes are quite small (generally less than 6 inmates at a time), allowing us define extensively who one interacts with during the length of incarceration. By using number of days of overlap as a measure of intensity of interaction, we find evidence of peer effects for skill-intensive offenses, in case of recidivism.</p>
+                </div>
+
+
 			<div id="container">	
 			
 			
-<p> <b>Collective Sentence Reductions and Recidivism</b>   <p> 
+<p> <a class="paper" > Collective Sentence Reductions and Recidivism   <p> </a> 
 											
-<p>  with  <a href="http://www.jourdan.ens.fr/~emaurin/" target=_new>  Eric Maurin. </a> </p>
-			</div>
-			
-			<div id="container1">				
-			<p align="justify"> <i>Abstract</i>: This paper exploits the collective pardon granted to individuals incarcerated in French prisons on the 14th of July, 1996 (Bastille Day) to identify the effect of collective sentence reductions on recidivism. The collective pardon generated a significant discontinuity in the relationship between the number of weeks of sentence reduction granted to inmates and their prospective date of release. We show that the same discontinuity exists in the relationship between recidivism five years after release and prospective date of release. Collective sentence reductions increase recidivism and do not represent a cost-effective way to reduce incarceration rates or prisons' overcrowding.</p>
+											<div class="indented-line">	
+<p>  with  <a href="http://www.jourdan.ens.fr/~emaurin/" target=_new>  Eric Maurin. </a> 		<span class="toggle-icon" onclick="toggleAbstract('abstract13')"><span id="icon-abstract13" class="expand-icon"></span>[+ <i>Abstract</i> ]  </span>
+                </p>
+                                </div>
 
-			</div>
+
+                <div id="abstract13" class="abstract">
+                    <p align="justify"> This paper exploits the collective pardon granted to individuals incarcerated in French prisons on the 14th of July, 1996 (Bastille Day) to identify the effect of collective sentence reductions on recidivism. The collective pardon generated a significant discontinuity in the relationship between the number of weeks of sentence reduction granted to inmates and their prospective date of release. We show that the same discontinuity exists in the relationship between recidivism five years after release and prospective date of release. Collective sentence reductions increase recidivism and do not represent a cost-effective way to reduce incarceration rates or prisons' overcrowding.</p>
+                </div>
+
+
 
 
 
