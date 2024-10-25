@@ -108,12 +108,11 @@ img
 	color: #333;
 }
 
-#maincont
-{
-	width: 800px;
-	line-height: 160%;
-	padding: 15px 0 0 0;
-	border-bottom: 2px solid  #00688B;
+#maincont {
+    width: 800px;
+    line-height: 160%;
+    padding: 15px 0 0 0;
+    border-bottom: 2px solid #00688B;
 }
 
 #maincont p
@@ -131,11 +130,10 @@ img
 	border-bottom: 1px solid #AAA;
 }
 
-#mainleft
-{
-	float: left;
-	width: 550px;
-	padding: 0 15px 0 0;
+#mainleft {
+    float: left;
+    width: 550px; 
+    padding: 0 15px 0 0;
 }
 
 #mainleft img
@@ -146,12 +144,11 @@ img
 	margin: 0 15px 5px 15px;
 }
 
-#mainright
-{
-	float: left;
-	width: 220px;
-	padding: 0 0 0 15px;
-	font-size:11px;
+#mainright {
+    float: left; 
+    width: 220px; 
+    padding: 0 0 0 15px;
+    font-size: 11px;
 }
 
 #bottom
